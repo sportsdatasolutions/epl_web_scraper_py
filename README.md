@@ -1,6 +1,6 @@
-## EPL Web Scraper Py
+## EPL Web Scraper ([Deepnote Edition](https://deepnote.com/publish/19f51d7b-ae79-4c51-906c-dee0138da144))
 
-> [Official EPL Goals Stats](https://www.premierleague.com/stats/) Web Scraper built in [Deepnote](https://deepnote.com/publish/19f51d7b-ae79-4c51-906c-dee0138da144) (designed to run anywhere e.g. locally).
+> [Official EPL Goals Stats](https://www.premierleague.com/stats/) Web Scraper [Built in Deepnote](https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144#%2Fepl_web_scraper.ipynb) (designed to run anywhere).
 
 ![EPLSiteScreen](https://sportsdatasolutionsacademy.s3.eu-west-2.amazonaws.com/public/EPLsitescreen.png)
 
@@ -45,10 +45,9 @@ $ brew tap homebrew/cask && brew cask install chromedriver
 
 1a. Duplicate (e.g. clone) from the published Deepnote project: https://deepnote.com/publish/19f51d7b-ae79-4c51-906c-dee0138da144
 1b. Or, try from the actual Deepnote project: https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144
-2. Link your own empty Github repo (Git Integration)
-3. Drag .git folder, within generated epl_web_scraper folder, into root of Deepnote project, and delete the empty epl_web_scraper folder
-4. Open a Terminal and Git Add, Commit, Push.
-5. See [init.ipynb (in Environment Tab)](https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144#%2Finit.ipynb) for more info on how the environment is customised to support web scraping via headless browser.
+1c. Alternatively, fork this repo then link your fork to a new Deepnote Project,
+2c. Drag folders/files into deepnote root and delete empty epl_web_scraper_py folder,
+3c. See [init.ipynb (in Environment Tab)](https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144#%2Finit.ipynb) for more info on how the environment is customised to support web scraping via headless browser. Make sure you copy over the Pipfile and Chrome Driver code cells to your projects init.ipynb file.
 ```
 
 #### ```Dependencies```
