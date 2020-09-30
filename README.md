@@ -17,6 +17,16 @@ If we were to simply ***request*** the page, we'd get the initial page load whic
 > You can either Fork this repo and Clone your Fork locally, or duplicate the project on Deepnote.
 
 ```markdown
+## Deepnote
+
+1a. Duplicate (e.g. clone) from the published Deepnote project: https://deepnote.com/publish/19f51d7b-ae79-4c51-906c-dee0138da144
+1b. Or, try from the actual Deepnote project: https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144
+1c. Alternatively, fork this repo then link your fork to a new Deepnote Project,
+2c. Drag folders/files into deepnote root and delete empty epl_web_scraper_py folder,
+3c. See [init.ipynb (in Environment Tab)](https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144#%2Finit.ipynb) for more info on how the environment is customised to support web scraping via headless browser. Make sure you copy over the Pipfile and Chrome Driver code cells to your projects init.ipynb file.
+```
+
+```markdown
 ## Fork & Clone
 
 1. Fork this Repo
@@ -40,16 +50,6 @@ $ sudo apt-get install chromium-driver -y
 $ brew tap homebrew/cask && brew cask install chromedriver
 ```
 
-```markdown
-## Deepnote
-
-1a. Duplicate (e.g. clone) from the published Deepnote project: https://deepnote.com/publish/19f51d7b-ae79-4c51-906c-dee0138da144
-1b. Or, try from the actual Deepnote project: https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144
-1c. Alternatively, fork this repo then link your fork to a new Deepnote Project,
-2c. Drag folders/files into deepnote root and delete empty epl_web_scraper_py folder,
-3c. See [init.ipynb (in Environment Tab)](https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144#%2Finit.ipynb) for more info on how the environment is customised to support web scraping via headless browser. Make sure you copy over the Pipfile and Chrome Driver code cells to your projects init.ipynb file.
-```
-
 #### ```Dependencies```
 
 > See [Pipfile](./Pipfile).
@@ -65,20 +65,6 @@ $ pipenv install jupyter
 > You have the option to either run the script (```.py```) version of the scraper or the notebook (```.ipynb```) version of the web scraper.
 
 ```markdown
-## Locally
-
-#### epl_goals_scraper.py
-
-$ pipenv run python epl_goals_scraper.py
-
-#### epl_goals_scraper.ipynb
-
-$ pipenv run jupyter notebook .
-
-Now open jupyter console and navigate to epl_goals_scraper.ipynb to run
-```
-
-```markdown
 ## Deepnote
 
 #### epl_goals_scraper.py
@@ -90,6 +76,20 @@ $ python epl_goals_scraper.py
 #### epl_goals_scraper.ipynb
 
 Open and click Run notebook.
+```
+
+```markdown
+## Locally
+
+#### epl_goals_scraper.py
+
+$ pipenv run python epl_goals_scraper.py
+
+#### epl_goals_scraper.ipynb
+
+$ pipenv run jupyter notebook .
+
+Now open jupyter console and navigate to epl_goals_scraper.ipynb to run
 ```
 
 #### ```Contributing```
