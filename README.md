@@ -1,6 +1,6 @@
 ## EPL Web Scraper Py
 
-> [Official EPL Goals Stats](https://www.premierleague.com/stats/) Web Scraper built in Deepnote (designed to run anywhere e.g. locally).
+> [Official EPL Goals Stats](https://www.premierleague.com/stats/) Web Scraper built in [Deepnote](https://deepnote.com/publish/19f51d7b-ae79-4c51-906c-dee0138da144) (designed to run anywhere e.g. locally).
 
 ![EPLSiteScreen](https://sportsdatasolutionsacademy.s3.eu-west-2.amazonaws.com/public/EPLsitescreen.png)
 
@@ -8,7 +8,7 @@
 
 The **[Official EPL Stats Website](https://www.premierleague.com/stats/)** is a great source of quality data in regards to Football, specifically the English Premier League. The **[Player Goals Table](https://www.premierleague.com/stats/top/players/goals?se=363)** specifically fetches data from the ***Pulse Live Football API*** (footballapi.pulselive.com). Use browser tools > network (refresh page) > XHR to see the ```goals?``` request. 
 
-If we were to simply ***request*** the page, we'd get the initial page load which defaults to the ***all-time goal scorers list*** (example of this in [epl_web_scraper.ipynb](./epl_web_scraper.ipynb)). We'd aslo have a problem scraping all the goal scorers because the table is paginated. So you'd have to ***click*** the next page button to load the next 'page' of data. So we know the data in the table is **dynamically loaded**, and a **simple http request** of the html is **not enough**.
+If we were to simply ***request*** the page, we'd get the initial page load which defaults to the ***all-time goal scorers list*** (example of this in [```epl_web_scraper.ipynb```](./epl_web_scraper.ipynb)). We'd aslo have a problem scraping all the goal scorers because the table is paginated. So you'd have to ***click*** the next page button to load the next 'page' of data. So we know the data in the table is **dynamically loaded**, and a **simple http request** of the html is **not enough**.
 
 **All this means it's time to break out the headless browser, automate with watir, parse tables with pandas, sit back...and enjoy** 👻🤖🐼💅
 
@@ -43,11 +43,12 @@ $ brew tap homebrew/cask && brew cask install chromedriver
 ```markdown
 ## Deepnote
 
-1. Duplicate (e.g. clone) this project (header > project name dropdown > duplicate project)
+1a. Duplicate (e.g. clone) from the published Deepnote project: https://deepnote.com/publish/19f51d7b-ae79-4c51-906c-dee0138da144
+1b. Or, try from the actual Deepnote project: https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144
 2. Link your own empty Github repo (Git Integration)
 3. Drag .git folder, within generated epl_web_scraper folder, into root of Deepnote project, and delete the empty epl_web_scraper folder
 4. Open a Terminal and Git Add, Commit, Push.
-5. See init.ipynb (in Environment Tab) for more info on how the environment is customised to support web scraping via headless browser.
+5. See [init.ipynb (in Environment Tab)](https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144#%2Finit.ipynb) for more info on how the environment is customised to support web scraping via headless browser.
 ```
 
 #### ```Dependencies```
