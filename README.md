@@ -6,11 +6,11 @@
 
 ### Story
 
-The **[Official EPL Stats Website](https://www.premierleague.com/stats/)** is a great source of quality data in regards to Football, specifically the English Premier League. The **[Player Goals Table](https://www.premierleague.com/stats/top/players/goals?se=363)** specifically fetches data from the ***Pulse Live Football API*** (footballapi.pulselive.com). Use browser tools > network (refresh page) > XHR to see the ```goals?``` request. 
+The **[Official EPL Stats Website](https://www.premierleague.com/stats/)** is a great source of quality data in regards to Football, specifically the English Premier League. The **[Player Goals Table](https://www.premierleague.com/stats/top/players/goals?se=363)** specifically fetches data from the ***Pulse Live Football API*** (footballapi.pulselive.com). Use browser tools > network (refresh page) > XHR to see the ```goals?``` request. However, if you try and request that data yourself through the browser, e.g copy past the query to pulse live API, **your request will be denied!** 🙅‍♂️
 
-If we were to simply ***request*** the page, we'd get the initial page load which defaults to the ***all-time goal scorers list*** (example of this in [```epl_web_scraper.ipynb```](./epl_web_scraper.ipynb)). We'd aslo have a problem scraping all the goal scorers because the table is paginated. So you'd have to ***click*** the next page button to load the next 'page' of data. So we know the data in the table is **dynamically loaded**, and a **simple http request** of the html is **not enough**.
+So, we need to scrape the HTML. However, if we were to simply ***request*** the page html, we'd get the initial page load which defaults to the ***all-time goal scorers list*** (example of this in [```epl_web_scraper.ipynb```](./epl_web_scraper.ipynb)). We'd aslo have a problem scraping all the goal scorers because the table is **paginated**. So..we know the data in the table is **dynamically loaded**, and a **simple http request** of the html is **not enough**.
 
-**All this means it's time to break out the headless browser, automate with watir, parse tables with pandas, sit back...and enjoy** 👻🤖🐼💅
+**All this means it's time to break out the headless browser, automate with watir, parse tables with pandas, sit back..and enjoy** 👻🤖🐼💅
 
 ### Getting Started
 
