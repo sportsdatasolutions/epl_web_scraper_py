@@ -19,29 +19,32 @@ So, we need to scrape the **HTML**. However, if we were to simply ***request*** 
 ```markdown
 ## Deepnote
 
-1a. Duplicate (e.g. clone) from the published Deepnote project: https://deepnote.com/publish/19f51d7b-ae79-4c51-906c-dee0138da144
-1b. Or, try from the actual Deepnote project: https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144
-1c. Alternatively, fork this repo then link your fork to a new Deepnote Project,
-2c. Drag folders/files into deepnote root and delete empty epl_web_scraper_py folder,
-3c. See Dockerfile and init.ipynb (in Environment Tab) for more info on how the environment is customised to support web scraping via headless browser. Make sure you copy over the code from Dockerfile and init.ipynb to your Project, then run the Dockerfile build and restart the machine.
+#### 1a. Duplicate (e.g. clone) from the published Deepnote project: https://deepnote.com/publish/19f51d7b-ae79-4c51-906c-dee0138da144
+
+#### 1b. Or, try from the actual Deepnote project: https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144
+
+#### 1c. Alternatively, fork this repo then link your fork to a new Deepnote Project,
+#### 2c. Drag folders/files into deepnote root and delete empty epl_web_scraper_py folder,
+#### 3c. See Dockerfile and init.ipynb (in Environment Tab) for more info on how the environment is customised to support web scraping via headless browser. Make sure you copy over the code from Dockerfile and init.ipynb to your Project, then run the Dockerfile build and restart the machine.
 ```
 
 ```markdown
 ## Fork & Clone
 
-1. Fork this Repo
-2. Clone your fork locally
+#### 1. Fork this Repo
+#### 2. Clone your fork locally
 
 $ git clone git@github.com:githubusername/epl_web_scraper.git && cd epl_web_scraper
 
-3. Install Dependencies with Pipenv
+#### 3. Install Dependencies with Pipenv. See this guide: https://realpython.com/pipenv-guide/ for help on pipenv (if not familiar)
 
 $ pip install pipenv
 $ pipenv install
 
-4. Install Chrome Driver (See https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver) e.g.
+#### 4. Install Chrome Driver (See https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver) e.g.
 
 #### Linux (WSL TBC)
+
 $ sudo apt-get update
 $ sudo apt-get install chromium-driver -y
 
@@ -52,7 +55,7 @@ $ brew tap homebrew/cask && brew cask install chromedriver
 
 #### ```Dependencies```
 
-> See [Pipfile](./Pipfile).
+> See [Pipfile](./Pipfile). See [this guide](https://realpython.com/pipenv-guide/) for help on ```pipenv``` (if not familiar).
 
 **Note**: If installing ***locally***, make sure you add **```jupyter```** to the **Pipfile** or use **```pipenv```** to install if you want to use the notebook version e.g.
 
