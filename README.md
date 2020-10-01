@@ -23,7 +23,7 @@ So, we need to scrape the **HTML**. However, if we were to simply ***request*** 
 1b. Or, try from the actual Deepnote project: https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144
 1c. Alternatively, fork this repo then link your fork to a new Deepnote Project,
 2c. Drag folders/files into deepnote root and delete empty epl_web_scraper_py folder,
-3c. See [init.ipynb (in Environment Tab)](https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144#%2Finit.ipynb) for more info on how the environment is customised to support web scraping via headless browser. Make sure you copy over the Pipfile and Chrome Driver code cells to your projects init.ipynb file.
+3c. See Dockerfile and init.ipynb (in Environment Tab) for more info on how the environment is customised to support web scraping via headless browser. Make sure you copy over the code from Dockerfile and init.ipynb to your Project, then run the Dockerfile build and restart the machine.
 ```
 
 ```markdown
