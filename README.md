@@ -1,6 +1,4 @@
-## EPL Web Scraper ([Deepnote Edition](https://deepnote.com/publish/19f51d7b-ae79-4c51-906c-dee0138da144))
-
-> [Official EPL Goals Stats](https://www.premierleague.com/stats/) Web Scraper [Built in Deepnote](https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144#%2Fepl_web_scraper.ipynb) (designed to run anywhere).
+## EPL Web Scraper [<img height="31" align="right" src="https://beta.deepnote.com/buttons/launch-in-deepnote.svg">](https://deepnote.com/publish/19f51d7b-ae79-4c51-906c-dee0138da144)
 
 ![EPLSiteScreen](https://sportsdatasolutionsacademy.s3.eu-west-2.amazonaws.com/public/EPLsitescreen.png)
 
