@@ -45,7 +45,7 @@ $ brew tap homebrew/cask && brew cask install chromedriver
 ```bash
 $ python epl_web_scraper.py
 # or with pipenv
-$ pipenv run epl_web_scraper.py
+$ pipenv run python epl_web_scraper.py
 ```
 
 #### ```Contributing```
