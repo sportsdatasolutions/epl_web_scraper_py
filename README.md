@@ -12,85 +12,40 @@ So, we need to scrape the **HTML**. However, if we were to simply ***request*** 
 
 ### Getting Started
 
-> You can either Fork this repo and Clone your Fork locally, or duplicate the project on Deepnote.
+> Duplicate the project on **Deepnote** (See launch in Deepnote button at **top** of Readme), **or**, fork this repo to clone in a **local** Python environment e.g.
 
-```markdown
-## Deepnote
-
-#### 1a. Duplicate (e.g. clone) from the published Deepnote project: https://deepnote.com/publish/19f51d7b-ae79-4c51-906c-dee0138da144
-
-#### 1b. Or, try from the actual Deepnote project: https://deepnote.com/project/19f51d7b-ae79-4c51-906c-dee0138da144
-
-#### 1c. Alternatively, fork this repo then link your fork to a new Deepnote Project,
-#### 2c. Drag folders/files into deepnote root and delete empty epl_web_scraper_py folder,
-#### 3c. See Dockerfile and init.ipynb (in Environment Tab) for more info on how the environment is customised to support web scraping via headless browser. Make sure you copy over the code from Dockerfile and init.ipynb to your Project, then run the Dockerfile build and restart the machine.
-```
-
-```markdown
-## Fork & Clone
-
-#### 1. Fork this Repo
-#### 2. Clone your fork locally
-
+```bash
 $ git clone git@github.com:githubusername/epl_web_scraper.git && cd epl_web_scraper
-
-#### 3. Install Dependencies with Pipenv. See this guide: https://realpython.com/pipenv-guide/ for help on pipenv (if not familiar)
-
-$ pip install pipenv
-$ pipenv install
-
-#### 4. Install Chrome Driver (See https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver) e.g.
-
-#### Linux (WSL TBC)
-
-$ sudo apt-get update
-$ sudo apt-get install chromium-driver -y
-
-#### MacOS w/ Homebrew (See https://brew.sh/)
-
-$ brew tap homebrew/cask && brew cask install chromedriver
 ```
 
 #### ```Dependencies```
 
-> See [Pipfile](./Pipfile). See [this guide](https://realpython.com/pipenv-guide/) for help on ```pipenv``` (if not familiar).
-
-**Note**: If installing ***locally***, make sure you add **```jupyter```** to the **Pipfile** or use **```pipenv```** to install if you want to use the notebook version e.g.
+> If on **Deepnote**, please see the **```init.ipynb``` (environment tab)** to see how the project is setup. If setting up **locally**, make sure you install **```jupyter```** if you want to use the notebook version. See [the docs](https://docs.pipenv.org/) for help on ```pipenv``` (if not familiar) e.g.
 
 ```bash
+$ pip install --user pipenv
 $ pipenv install jupyter
+```
+
+> And install **Chrome Driver**. See [SeleniumHQ wiki](https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver) e.g.
+
+```bash
+# Linux (WSL TBC)
+$ sudo apt-get update
+$ sudo apt-get install chromium-driver -y
+
+# MacOS w/ Homebrew (See https://brew.sh/)
+$ brew tap homebrew/cask && brew cask install chromedriver
 ```
 
 #### ```Running```
 
-> You have the option to either run the script (```.py```) version of the scraper or the notebook (```.ipynb```) version of the web scraper.
+> You have the option to either run the **script (```.py```)** version of the scraper or the **notebook (```.ipynb```)** version of the web scraper. e.g. to run script:
 
-```markdown
-## Deepnote
-
-#### epl_goals_scraper.py
-
-Open a Terminal within Deepnote Project.
-
-$ python epl_goals_scraper.py
-
-#### epl_goals_scraper.ipynb
-
-Open and click Run notebook.
-```
-
-```markdown
-## Locally
-
-#### epl_goals_scraper.py
-
-$ pipenv run python epl_goals_scraper.py
-
-#### epl_goals_scraper.ipynb
-
-$ pipenv run jupyter notebook .
-
-Now open jupyter console and navigate to epl_goals_scraper.ipynb to run
+```bash
+$ python epl_web_scraper.py
+# or with pipenv
+$ pipenv run epl_web_scraper.py
 ```
 
 #### ```Contributing```
