@@ -3,7 +3,7 @@ import pandas as pd
 import time
 
 browser = Browser('chrome', headless=True) # Set Headless to True so the physical GUI of Chrome doesn't have to be used ⚡️ 
-browser.goto('https://www.premierleague.com/stats/top/players/goals?se=363') # Now use the browser to navigate to the EPL Stats Page
+browser.goto('https://www.premierleague.com/stats/top/players/goals?se=274') # Now use the browser to navigate to the EPL Stats Page
 
 time.sleep(5) # Allow data time to load into HTML
 
@@ -19,6 +19,8 @@ while ((browser.div(class_name=["paginationBtn", "paginationNextContainer", "ina
 
 goals = goals[goals['Stat'] > 0] # Random Players at end of table wit 0 goals...
 
-goals.to_csv(r'epl_goals.csv', index=False) # Save dataframe to new csv file
+goals = goals.dropna(axis=1, how='all') # Random Unamed Column (all NaN elements, so clear columns where 'all' values are NaN)
+
+goals.to_csv(r'data/epl_goals_19_20.csv', index=False) # Save dataframe to new csv file
 
 browser.close() # Close Browser
